@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo questionario</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/quiz.js"></script>
+    <script>
+        
+        var x
+
+        function opcao1(){
+            document.getElementById("op_1").style.background = "green"
+             x = 70
+            console.log(x)
+            document.getElementById("pontuacao_atual").textContent = x 
+
+            
+        }
+
+        function opcao2(){
+            document.getElementById("op_2").style.background = "red"
+             x = 0
+            console.log("clicou no 2", x)
+            document.getElementById("pontuacao_atual").textContent = x 
+        }
+
+        function opcao3(){
+            document.getElementById("op_3").style.background = "red"
+             x = 0
+            console.log("clicou no 3", x)
+            document.getElementById("pontuacao_atual").textContent = x 
+        }
+
+        function opcao4(){
+            document.getElementById("op_4").style.background = "red"
+             x = 0
+            console.log("clicou no 4", x)
+            document.getElementById("pontuacao_atual").textContent = x 
+        }
+
+
+
+
+
+         
+    </script>
+</head>
+
+<body>
+
+    <main>
+        <!--Contem todo o conteudo-->
+        
+        <section id="container_questionario_pontuacao_score">
+            <!--Contem a parte da pergunta, da pontuação e do High score-->
+            
+            <article id="container_questionario">
+                <!--Container da pergunta com imagens e respostas-->
+                <div id="container_titulo">
+                    <h1>Questionário de Filmes</h1>
+        
+                </div>
+
+                <div id="container_mensagem">
+                    <h2>Bem-vindo ao quiz sobre filmes <br>escolha uma das perguntas abaixo
+                    </h2>
+                </div>
+
+              <!--
+
+                  <div id="container_imagem">
+                      Container da imagem
+                      <img src="./images/imagens_teste_questionario.jpg" alt="paisagem" width="300px" height="200px">
+                    </div>
+                    
+                    <div id="container_pergunta">
+                        Container da pergunta embaixo da imagem
+                        <p>Essa imagem corresponde a qual Filme  ? </p>
+                </div>
+                
+                <div id="container_respostas">
+                    Container das respostas
+                    
+                    <div class="cards_respostas">
+                        <button class="botao_respostas">Resposta 1</button>
+                    </div>
+                    
+                    <div class="cards_respostas">
+                        <button  class="botao_respostas">Resposta 2</button>
+                    </div>
+                    
+                    <div class="cards_respostas">
+                        <button  class="botao_respostas">Resposta 3</button>
+                    </div>
+                    
+                    <div class="cards_respostas">
+                        <button  class="botao_respostas">Resposta 4</button>
+                    </div>
+                </div>
+            -->  
+                
+                
+                
+            </article>
+            
+            <article id="container_pontuacao_score">
+                <!--Container da pontuação e High score-->
+
+                <article id="container_pontuacao">
+                    <!--Container da pontuação-->
+                    <div class="card_pontuacao">
+                        <h4>Pontuação Atual :</h4>
+                        <span id="pontuacao_atual"><strong></strong></span>
+                    </div>
+
+                    <div class="card_pontuacao">
+                        <h4>Record</h4>
+                        <span id="record"><strong></strong></span>
+                    </div>
+
+                    <div class="card_pontuacao"> 
+                        <h4>Pontuação total :</h4>
+                        <span id="pontuacao_total"><strong></strong></span>
+                    </div>
+
+                </article>
+
+                <article id="container_score">
+                    <!--Container do High score-->
+                    <div id="container_botao_pontuacao">
+                        <button class="botao_pontuacao">High Score</button>
+                        <button class="botao_pontuacao">Salvar</button>
+
+                    </div>
+
+                    <div id="container_do_ranking"></div>
+
+                </article>
+            </article>
+
+        </section>
+
+        <section id="container_cards">
+            <!--Contem os cards de perguntas-->
+            <div class="card">
+                <button class="botao_card" id="botao_card_1" onclick="pergunta1()">
+                    Pergunta 1
+                    <div class="valor_card" >
+                        +70
+                    </div>
+                </button>
+            </div>
+
+            <div class="card">
+                <button class="botao_card"  id="botao_card_2">
+                    Pergunta 2
+                    <div class="valor_card" >
+                        +70
+                    </div>
+                </button>
+            </div>
+
+            <div class="card">
+                <button class="botao_card"  id="botao_card_3">
+                    Pergunta 3
+                    <div class="valor_card" >
+                        +50
+                    </div>
+                </button>
+            </div>
+
+            <div class="card">
+                <button class="botao_card"  id="botao_card_4">
+                    Pergunta 4
+                    <div class="valor_card" >
+                        +50
+                    </div>
+                </button>
+            </div>
+
+            <div class="card">
+                <button class="botao_card" id="botao_card_5">
+                    Pergunta 5
+                    <div class="valor_card" >
+                        +30
+                    </div>
+                </button>
+            </div>
+
+            <div class="card">
+                <button class="botao_card" id="botao_card_6" >
+                    Pergunta 6
+                    <div class="valor_card" >
+                        +30
+                    </div>
+                </button>
+            </div>
+
+            <div class="card">
+                <button class="botao_card" id="botao_card_7">
+                    Pergunta 7
+                    <div class="valor_card" >
+                        +30
+                    </div>
+                </button>
+            </div>
+
+            <div class="card">
+                <button class="botao_card" id="botao_card_8">
+                    Pergunta 8
+                    <div class="valor_card" >
+                        +20
+                    </div>
+                </button>
+            </div>
+
+            <div class="card">
+                <button class="botao_card" id="botao_card_9">
+                    Pergunta 9
+                    <div class="valor_card" >
+                        +20
+                    </div>
+                </button>
+            </div>
+
+            <div class="card">
+                <button class="botao_card" id="botao_card_10">
+                    Pergunta 10
+                    <div class="valor_card" >
+                        +10
+                    </div>
+                </button>
+            </div>
+
+            <div class="card">
+                <button class="botao_card" id="botao_card_11">
+                    Pergunta 11
+                    <div class="valor_card">
+                        +10
+                    </div>
+                </button>
+            </div>
+
+            <div class="card">
+                <button class="botao_card" id="botao_card_12">
+                    Pergunta 12
+                    <div class="valor_card" >
+                        +10
+                    </div>
+                </button>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+
+</html>

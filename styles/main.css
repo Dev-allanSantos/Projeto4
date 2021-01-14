@@ -1,0 +1,325 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    align-items: center;
+}
+
+div#container_titulo{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+}
+
+div#container_mensagem{
+    text-align: center;
+    margin-top: 300px;
+}
+
+section#container_questionario_pontuacao_score{
+    
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    
+}
+
+article#container_questionario{
+    
+    border:#034694 solid 5px;
+    width: 60%;
+    height: 850px;
+    min-width: 510px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    margin: 0;
+    
+    
+}
+
+div#container_imagem{
+    background-color: white;
+    
+    width: 55%;
+    min-width: 350px;
+    height: 250px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: 15px;
+}
+
+div#container_pergunta{
+    background-color: white;
+    width: 50%;
+    min-width: 350px;
+    border-radius: 20px;
+    padding: 8px;
+    
+    display: flex;
+    justify-content: center;
+}
+
+div#container_respostas{
+    
+    width: 70%;
+    margin-left: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+div.cards_respostas{
+    width: 43%;
+    min-width: 135px;
+    background-color: cadetblue;
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+button.botao_respostas{
+    background-color: white;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    border: 4px solid lightblue ;
+    color: lightskyblue;
+}
+
+button.botao_respostas:hover{
+    border-color: rgb(21, 144, 220);
+    background-color: rgb(61, 115, 233);
+    color: white;
+}
+
+article#container_pontuacao_score{
+    
+    width: 39%;
+    min-width: 400px;
+    background-color:#aad0fc;
+    margin-top: 55px;
+    
+}
+
+article#container_pontuacao{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+div.card_pontuacao{
+    
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+
+article#container_score{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+div#container_botao_pontuacao{
+
+    width: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+button.botao_pontuacao{
+    background-color:rgb(61, 115, 233) ;
+    color: white;
+    height: 40px;
+    width: 90px;
+    border-radius: 7px;
+    margin: 5px;
+    border:4px solid rgb(61, 115, 233) ;
+}
+
+button.botao_pontuacao:hover{
+    background-color: white;
+    color: rgb(61, 115, 233);
+    border-color: rgb(72, 174, 237);
+}
+
+
+section#container_cards{
+    
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    
+}
+
+div.card{
+    
+    width: 210px;
+    margin: 10px;
+    height: 200px;
+    
+}
+
+button.botao_card{
+    width: 210px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: white;
+    border: 5px solid;
+    font-size: 20px;
+}
+
+
+
+
+div.valor_card{
+
+    display: none;
+}
+
+button.botao_card:hover div.valor_card{
+    display: block;
+}
+
+/*Definição de cor invidual dos cards de perguntas, motivo: degrade*/
+
+button#botao_card_1{
+    background-color: #034694;
+    color:white;
+}
+/*button#botao_card_1:hover{
+    background-color: #034694;
+    color: white;
+}*/
+
+button#botao_card_2{
+    background-color: #034694;
+    color: white;
+}
+/*button#botao_card_2:hover{
+    background-color: #034694;
+    color: white;
+}*/
+
+button#botao_card_3{
+    background-color: #236abb;
+    color: white;
+}
+
+/*button#botao_card_3:hover{
+    background-color: #236abb;
+    color: white;
+}*/
+
+button#botao_card_4{
+    background-color: #236abb;
+    color: white;
+}
+/*button#botao_card_4:hover{
+    background-color: #236abb;
+    color: white;
+}*/
+
+button#botao_card_5{
+    background-color: #478ad6;
+    color: white;
+}
+/*button#botao_card_5:hover{
+    background-color: #478ad6;
+    color: white;
+}*/
+
+button#botao_card_6{
+    background-color: #478ad6;
+    color: white;
+}
+
+/*button#botao_card_6:hover{
+    background-color: #478ad6;
+    color: white;
+}*/
+
+button#botao_card_7{
+    background-color: #387ece;
+    color: white;
+}
+
+/*button#botao_card_7:hover{
+    background-color:#387ece;
+    color: white;
+}*/
+
+button#botao_card_8{
+    background-color: #6f9ed3;
+    color: white;
+}
+
+/*button#botao_card_8:hover{
+    background-color: #6f9ed3;
+    color: white;
+}*/
+
+button#botao_card_9{
+    background-color: #6f9ed3;
+    color: white;
+}
+
+/*button#botao_card_9:hover{
+    background-color: #6f9ed3;
+    color: white;
+}*/
+
+button#botao_card_10{
+    background-color: #aad0fc;
+    color: white;
+}
+
+/*button#botao_card_10:hover{
+    background-color: #aad0fc;
+    color: white;
+}*/
+
+button#botao_card_11{
+    background-color: #aad0fc;
+    color: white;
+}
+
+/*button#botao_card_11:hover{
+    background-color: #aad0fc;
+    color: white;
+}*/
+
+button#botao_card_12{
+    background-color:#aad0fc ;
+    color: white;
+}
+/*button#botao_card_12:hover{
+    background-color: #aad0fc;
+    color: white;
+}*/
+
+
+
