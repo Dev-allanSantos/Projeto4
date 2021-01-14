@@ -17,7 +17,18 @@ var deck = [
     },
 
     {
-        
+        imagem : "../images/clube_da_luta.jpg",
+        pergunta : "Qual é a primeira regra do clube da luta ? ",
+        resposta : ["Não falar sobre o clube da Luta", "Não nocautear os oponentes", "usar proteção bucal", "Não faltar as lutas"],
+        resultado : 50
+
+    },
+
+    {
+        imagem : "../images/Titanic_1.jpg",
+        pergunta : "em que ano foi criado o filme Titanic de James Cameron?",
+        resposta : [1997, 2008, 1995, 1980],
+        resultado : 50  
     }
 ]
 
@@ -44,15 +55,15 @@ function pergunta1(){
   
   
   <div class="cards_respostas">
-      <button class="botao_respostas" id="q1_op_1" onclick="q1_errada1()">${deck[0].resposta[0]}</button>
+      <button class="botao_respostas" id="q1_op_1" onclick="q1_errada(x= 'q1_op_1')">${deck[0].resposta[0]}</button>
   </div>
   
   <div class="cards_respostas">
-      <button  class="botao_respostas" id="q1_op_2" onclick="q1_errada2()">${deck[0].resposta[1]}</button>
+      <button  class="botao_respostas" id="q1_op_2" onclick="q1_errada(x = 'q1_op_2')">${deck[0].resposta[1]}</button>
   </div>
   
   <div class="cards_respostas">
-      <button  class="botao_respostas" id="q1_op_3" onclick="q1_errada3()">${deck[0].resposta[2]}</button>
+      <button  class="botao_respostas" id="q1_op_3" onclick="q1_errada(x = 'q1_op_3')">${deck[0].resposta[2]}</button>
   </div>
   
   <div class="cards_respostas">
@@ -71,7 +82,7 @@ function pergunta2(){
 
 <div id="container_imagem">
 
-    <img src="${deck[1].imagem}" alt="paisagem" width="${deck[1].largura}" height="${deck[1].altura}">
+    <img src="${deck[1].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
 </div>
 
 <div id="container_pergunta">
@@ -83,7 +94,7 @@ function pergunta2(){
 
 
 <div class="cards_respostas">
-  <button class="botao_respostas" id="q2_op_1" onclick="q2_errada1()">${deck[1].resposta[0]}</button>
+  <button class="botao_respostas" id="q2_op_1" onclick="q2_errada(y = 'q2_op_1')">${deck[1].resposta[0]}</button>
 </div>
 
 <div class="cards_respostas">
@@ -91,11 +102,90 @@ function pergunta2(){
 </div>
 
 <div class="cards_respostas">
-  <button  class="botao_respostas" id="q2_op_3" onclick="q2_errada2()">${deck[1].resposta[2]}</button>
+  <button  class="botao_respostas" id="q2_op_3" onclick="q2_errada(y = 'q2_op_3')">${deck[1].resposta[2]}</button>
 </div>
 
 <div class="cards_respostas">
-  <button  class="botao_respostas" id="q2_op_4" onclick="q2_errada3()">${deck[1].resposta[3]}</button>
+  <button  class="botao_respostas" id="q2_op_4" onclick="q2_errada(y = 'q2_op_4')">${deck[1].resposta[3]}</button>
 </div>
 </div>`
 }
+
+function pergunta3(){
+    document.getElementById("container_questionario").innerHTML =
+    ` <div id="container_titulo">
+    
+    <h1>Questionário de Filmes</h1>
+
+</div>
+
+<div id="container_imagem">
+
+    <img src="${deck[2].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
+</div>
+
+<div id="container_pergunta">
+
+  <p>${deck[2].pergunta} </p>
+</div>
+
+<div id="container_respostas">
+
+
+<div class="cards_respostas">
+  <button class="botao_respostas" id="q3_op_1" onclick="q3_correta()">${deck[2].resposta[0]}</button>
+</div>
+
+<div class="cards_respostas">
+  <button  class="botao_respostas" id="q3_op_2" onclick="q3_errada1()">${deck[2].resposta[1]}</button>
+</div>
+
+<div class="cards_respostas">
+  <button  class="botao_respostas" id="q3_op_3" onclick="q3_errada2()">${deck[2].resposta[2]}</button>
+</div>
+
+<div class="cards_respostas">
+  <button  class="botao_respostas" id="q3_op_4" onclick="q3_errada3()">${deck[2].resposta[3]}</button>
+</div>
+</div>`
+}
+
+function pergunta4(){
+    document.getElementById("container_questionario").innerHTML =
+    ` <div id="container_titulo">
+    
+    <h1>Questionário de Filmes</h1>
+
+</div>
+
+<div id="container_imagem">
+
+    <img src="${deck[3].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
+</div>
+
+<div id="container_pergunta">
+
+  <p>${deck[3].pergunta} </p>
+</div>
+
+<div id="container_respostas">
+
+
+<div class="cards_respostas">
+  <button class="botao_respostas" id="q3_op_1" onclick="q4_correta()">${deck[3].resposta[0]}</button>
+</div>
+
+<div class="cards_respostas">
+  <button  class="botao_respostas" id="q3_op_2" onclick="q4_errada1()">${deck[3].resposta[1]}</button>
+</div>
+
+<div class="cards_respostas">
+  <button  class="botao_respostas" id="q3_op_3" onclick="q4_errada2()">${deck[3].resposta[2]}</button>
+</div>
+
+<div class="cards_respostas">
+  <button  class="botao_respostas" id="q3_op_4" onclick="q4_errada3()">${deck[3].resposta[3]}</button>
+</div>
+</div>`
+}
+
