@@ -164,7 +164,7 @@ function q5_errada(a){
     document.getElementById(a).style.background = "red"
     document.getElementById(a).style.borderColor = "red"
     document.getElementById(a).style.color = "white"
-     questao4 = 0
+     questao6 = 0
     console.log("clicou na errada")
     document.getElementById("pontuacao_atual").textContent = questao4 
     document.getElementById("pontuacao_total").textContent = 
@@ -172,3 +172,30 @@ function q5_errada(a){
     
 }
 //Bloco de função para os botões respostas da questão 5
+
+function q6_correta(){
+    document.getElementById("q6_op_2").style.background = "green"
+    document.getElementById("q6_op_2").style.borderColor = "green"
+    document.getElementById("q6_op_2").style.color = "white"
+
+    
+     questao6 = 30
+    console.log("Clicou na certa pontos ---> ", questao6)
+    document.getElementById("pontuacao_atual").textContent = questao6 
+    document.getElementById("pontuacao_total").textContent = 
+    questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+    
+   
+    
+}
+
+function q6_errada(b){
+    document.getElementById(b).style.background = "red"
+    document.getElementById(b).style.borderColor = "red"
+    document.getElementById(b).style.color = "white"
+     questao6 = 0
+    console.log("clicou na errada")
+    document.getElementById("pontuacao_atual").textContent = questao6 
+    document.getElementById("pontuacao_total").textContent = 
+    questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+}

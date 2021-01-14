@@ -39,7 +39,7 @@ var deck = [
     },
 
     {
-        imagem : "../images/",
+        imagem : "../images/Darth_vader.jpg",
         pergunta : "O que Darth Vader fala para Luke Skywalker nesta cena ?",
         resposta : ["Voce nunca vencerá", "Luke, eu sou seu pai", "Venha para o lado Negro da força", "Eu vou te  matar"],
         resultado : 30
@@ -240,6 +240,45 @@ function pergunta5(){
 
 <div class="cards_respostas">
   <button  class="botao_respostas" id="q5_op_4" onclick="q5_errada(a = 'q5_op_4')">${deck[4].resposta[3]}</button>
+</div>
+</div>`
+}
+
+function pergunta6(){
+  document.getElementById("container_questionario").innerHTML =
+  ` <div id="container_titulo">
+  
+  <h1>Questionário de Filmes</h1>
+
+</div>
+
+<div id="container_imagem">
+
+  <img src="${deck[5].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
+</div>
+
+<div id="container_pergunta">
+
+<p>${deck[5].pergunta} </p>
+</div>
+
+<div id="container_respostas">
+
+
+<div class="cards_respostas">
+<button class="botao_respostas" id="q6_op_1" onclick="q6_errada(b = 'q6_op_1')">${deck[5].resposta[0]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q6_op_2" onclick="q6_correta()">${deck[5].resposta[1]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q6_op_3" onclick="q6_errada(b = 'q6_op_3')">${deck[5].resposta[2]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q6_op_4" onclick="q6_errada(b = 'q6_op_4')">${deck[5].resposta[3]}</button>
 </div>
 </div>`
 }
