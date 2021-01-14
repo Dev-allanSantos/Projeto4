@@ -4,7 +4,7 @@ var deck = [
         imagem : "../images/Homem_mosca.jpg",
         altura : "270px",
         largura :"90%",
-        pergunta:"Esta cena corresponde a qual filme ?",
+        pergunta:"Esta cena pertence a qual filme ?",
         resposta : ["Vinhas da Ira", "O Relojoeiro", "Lista de Schindler", "O Homem Mosca"],
         resultado : 70 
     },
@@ -26,10 +26,26 @@ var deck = [
 
     {
         imagem : "../images/Titanic_1.jpg",
-        pergunta : "em que ano foi criado o filme Titanic de James Cameron?",
+        pergunta : "Em que ano foi criado o filme Titanic de James Cameron?",
         resposta : [1997, 2008, 1995, 1980],
         resultado : 50  
+    },
+
+    {
+        imagem : "../images/estatueta.jpg",
+        pergunta : "Quantos oscars o filme Titanic Ganhou ?",
+        resposta : [10,7,11,12],
+        resultado : 30
+    },
+
+    {
+        imagem : "../images/",
+        pergunta : "O que Darth Vader fala para Luke Skywalker nesta cena ?",
+        resposta : ["Voce nunca vencerá", "Luke, eu sou seu pai", "Venha para o lado Negro da força", "Eu vou te  matar"],
+        resultado : 30
     }
+
+
 ]
 
 function pergunta1(){
@@ -137,15 +153,15 @@ function pergunta3(){
 </div>
 
 <div class="cards_respostas">
-  <button  class="botao_respostas" id="q3_op_2" onclick="q3_errada1()">${deck[2].resposta[1]}</button>
+  <button  class="botao_respostas" id="q3_op_2" onclick="q3_errada(w = 'q3_op_2')">${deck[2].resposta[1]}</button>
 </div>
 
 <div class="cards_respostas">
-  <button  class="botao_respostas" id="q3_op_3" onclick="q3_errada2()">${deck[2].resposta[2]}</button>
+  <button  class="botao_respostas" id="q3_op_3" onclick="q3_errada(w = 'q3_op_3')">${deck[2].resposta[2]}</button>
 </div>
 
 <div class="cards_respostas">
-  <button  class="botao_respostas" id="q3_op_4" onclick="q3_errada3()">${deck[2].resposta[3]}</button>
+  <button  class="botao_respostas" id="q3_op_4" onclick="q3_errada(w = 'q3_op_4')">${deck[2].resposta[3]}</button>
 </div>
 </div>`
 }
@@ -172,19 +188,58 @@ function pergunta4(){
 
 
 <div class="cards_respostas">
-  <button class="botao_respostas" id="q3_op_1" onclick="q4_correta()">${deck[3].resposta[0]}</button>
+  <button class="botao_respostas" id="q4_op_1" onclick="q4_correta()">${deck[3].resposta[0]}</button>
 </div>
 
 <div class="cards_respostas">
-  <button  class="botao_respostas" id="q3_op_2" onclick="q4_errada1()">${deck[3].resposta[1]}</button>
+  <button  class="botao_respostas" id="q4_op_2" onclick="q4_errada(z = 'q4_op_2')">${deck[3].resposta[1]}</button>
 </div>
 
 <div class="cards_respostas">
-  <button  class="botao_respostas" id="q3_op_3" onclick="q4_errada2()">${deck[3].resposta[2]}</button>
+  <button  class="botao_respostas" id="q4_op_3" onclick="q4_errada(z = 'q4_op_3')">${deck[3].resposta[2]}</button>
 </div>
 
 <div class="cards_respostas">
-  <button  class="botao_respostas" id="q3_op_4" onclick="q4_errada3()">${deck[3].resposta[3]}</button>
+  <button  class="botao_respostas" id="q4_op_4" onclick="q4_errada(z = 'q4_op_4')">${deck[3].resposta[3]}</button>
+</div>
+</div>`
+}
+
+function pergunta5(){
+    document.getElementById("container_questionario").innerHTML =
+    ` <div id="container_titulo">
+    
+    <h1>Questionário de Filmes</h1>
+
+</div>
+
+<div id="container_imagem">
+
+    <img src="${deck[4].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
+</div>
+
+<div id="container_pergunta">
+
+  <p>${deck[4].pergunta} </p>
+</div>
+
+<div id="container_respostas">
+
+
+<div class="cards_respostas">
+  <button class="botao_respostas" id="q5_op_1" onclick="q5_errada(a = 'q5_op_1')">${deck[4].resposta[0]}</button>
+</div>
+
+<div class="cards_respostas">
+  <button  class="botao_respostas" id="q5_op_2" onclick="q5_errada(a = 'q5_op_2')">${deck[4].resposta[1]}</button>
+</div>
+
+<div class="cards_respostas">
+  <button  class="botao_respostas" id="q5_op_3" onclick="q5_correta()">${deck[4].resposta[2]}</button>
+</div>
+
+<div class="cards_respostas">
+  <button  class="botao_respostas" id="q5_op_4" onclick="q5_errada(a = 'q5_op_4')">${deck[4].resposta[3]}</button>
 </div>
 </div>`
 }

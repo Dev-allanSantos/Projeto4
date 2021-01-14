@@ -108,36 +108,14 @@ function q3_errada(w){
     
 }
 
-function q3_errada2(){
-    document.getElementById("q3_op_3").style.background = "red"
-    document.getElementById("q3_op_3").style.borderColor = "red"
-    document.getElementById("q3_op_3").style.color = "white"
-     questao3 = 0
-    console.log("clicou na errada")
-    document.getElementById("pontuacao_atual").textContent = questao3 
-    document.getElementById("pontuacao_total").textContent = 
-    questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
-    
-}
 
-function q3_errada3(){
-    document.getElementById("q3_op_4").style.background = "red"
-    document.getElementById("q3_op_4").style.borderColor = "red"
-    document.getElementById("q3_op_4").style.color = "white"
-     questao3 = 0
-    console.log("clicou na errada")
-    document.getElementById("pontuacao_atual").textContent = questao3 
-    document.getElementById("pontuacao_total").textContent = 
-    questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
-    
-}
 //Bloco de função para os botões respostas da questão 3
 
 //Bloco de função para os botões respostas da questão 4
 function q4_correta(){
-    document.getElementById("q3_op_1").style.background = "green"
-    document.getElementById("q3_op_1").style.borderColor = "green"
-    document.getElementById("q3_op_1").style.color = "white"
+    document.getElementById("q4_op_1").style.background = "green"
+    document.getElementById("q4_op_1").style.borderColor = "green"
+    document.getElementById("q4_op_1").style.color = "white"
 
     
      questao4 = 50
@@ -150,10 +128,10 @@ function q4_correta(){
     
 }
 
-function q4_errada1(){
-    document.getElementById("q3_op_2").style.background = "red"
-    document.getElementById("q3_op_2").style.borderColor = "red"
-    document.getElementById("q3_op_2").style.color = "white"
+function q4_errada(z){
+    document.getElementById(z).style.background = "red"
+    document.getElementById(z).style.borderColor = "red"
+    document.getElementById(z).style.color = "white"
      questao4 = 0
     console.log("clicou na errada")
     document.getElementById("pontuacao_atual").textContent = questao4 
@@ -162,27 +140,35 @@ function q4_errada1(){
     
 }
 
-function q4_errada2(){
-    document.getElementById("q3_op_3").style.background = "red"
-    document.getElementById("q3_op_3").style.borderColor = "red"
-    document.getElementById("q3_op_3").style.color = "white"
-     questao4 = 0
-    console.log("clicou na errada")
-    document.getElementById("pontuacao_atual").textContent = questao4 
-    document.getElementById("pontuacao_total").textContent = 
-    questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
-    
-}
 
-function q4_errada3(){
-    document.getElementById("q3_op_4").style.background = "red"
-    document.getElementById("q3_op_4").style.borderColor = "red"
-    document.getElementById("q3_op_4").style.color = "white"
-     questao3 = 0
-    console.log("clicou na errada")
-    document.getElementById("pontuacao_atual").textContent = questao3 
-    document.getElementById("pontuacao_total").textContent = 
-    questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
-    
-}
 //Bloco de função para os botões respostas da questão 4
+
+//Bloco de função para os botões respostas da questão 5
+function q5_correta(){
+    document.getElementById("q5_op_3").style.background = "green"
+    document.getElementById("q5_op_3").style.borderColor = "green"
+    document.getElementById("q5_op_3").style.color = "white"
+
+    
+     questao5 = 30
+    console.log("Clicou na certa pontos ---> ", questao5)
+    document.getElementById("pontuacao_atual").textContent = questao5 
+    document.getElementById("pontuacao_total").textContent = 
+    questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+    
+   
+    
+}
+
+function q5_errada(a){
+    document.getElementById(a).style.background = "red"
+    document.getElementById(a).style.borderColor = "red"
+    document.getElementById(a).style.color = "white"
+     questao4 = 0
+    console.log("clicou na errada")
+    document.getElementById("pontuacao_atual").textContent = questao4 
+    document.getElementById("pontuacao_total").textContent = 
+    questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+    
+}
+//Bloco de função para os botões respostas da questão 5
