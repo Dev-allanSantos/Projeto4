@@ -32,7 +32,7 @@ function q1_correta(){
         
     
 }
-//questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+
 
 function q1_errada(x){
     document.getElementById(x).style.background = "red"
@@ -42,7 +42,7 @@ function q1_errada(x){
     console.log("clicou na errada")
     document.getElementById("pontuacao_atual").textContent = questao1 
     document.getElementById("pontuacao_total").textContent = contador
-    //questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+    
     
     
 }
@@ -63,7 +63,7 @@ function q2_correta(){
     console.log("Clicou na certa pontos ---> ", questao2)
     document.getElementById("pontuacao_atual").textContent = questao2 
     document.getElementById("pontuacao_total").textContent = contador
-    //questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+    
     
    
     
@@ -78,7 +78,7 @@ function q2_errada(y){
     console.log("clicou na errada")
     document.getElementById("pontuacao_atual").textContent = questao2 
     document.getElementById("pontuacao_total").textContent = contador
-    //questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+    
     
 }
 
@@ -97,7 +97,7 @@ function q3_correta(){
     console.log("Clicou na certa pontos ---> ", questao3)
     document.getElementById("pontuacao_atual").textContent = questao3 
     document.getElementById("pontuacao_total").textContent =  contador
-   // questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+   
     
    
     
@@ -111,7 +111,7 @@ function q3_errada(w){
     console.log("clicou na errada")
     document.getElementById("pontuacao_atual").textContent = questao3 
     document.getElementById("pontuacao_total").textContent = contador
-    //questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+   
     
 }
 
@@ -129,7 +129,7 @@ function q4_correta(){
     console.log("Clicou na certa pontos ---> ", questao4)
     document.getElementById("pontuacao_atual").textContent = questao4 
     document.getElementById("pontuacao_total").textContent = contador
-   // questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+   
     
    
     
@@ -143,7 +143,7 @@ function q4_errada(z){
     console.log("clicou na errada")
     document.getElementById("pontuacao_atual").textContent = questao4 
     document.getElementById("pontuacao_total").textContent = contador
-    //questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+   
     
 }
 
@@ -161,7 +161,7 @@ function q5_correta(){
     console.log("Clicou na certa pontos ---> ", questao5)
     document.getElementById("pontuacao_atual").textContent = questao5 
     document.getElementById("pontuacao_total").textContent = contador
-    //questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+   
     
    
     
@@ -175,24 +175,27 @@ function q5_errada(a){
     console.log("clicou na errada")
     document.getElementById("pontuacao_atual").textContent = questao4 
     document.getElementById("pontuacao_total").textContent = contador
-    //questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+   
     
 }
 //Bloco de função para os botões respostas da questão 5
+
+
+//Bloco de função para os botões respostas da questão 6
 
 function q6_correta(){
     document.getElementById("q6_op_2").style.background = "green"
     document.getElementById("q6_op_2").style.borderColor = "green"
     document.getElementById("q6_op_2").style.color = "white"
-
-     contador += 30
-     questao6 = 30
+    
+    contador += 30
+    questao6 = 30
     console.log("Clicou na certa pontos ---> ", questao6)
     document.getElementById("pontuacao_atual").textContent = questao6 
     document.getElementById("pontuacao_total").textContent = contador
-    //questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
     
-   
+    
+    
     
 }
 
@@ -200,9 +203,100 @@ function q6_errada(b){
     document.getElementById(b).style.background = "red"
     document.getElementById(b).style.borderColor = "red"
     document.getElementById(b).style.color = "white"
-     questao6 = 0
+    questao6 = 0
     console.log("clicou na errada")
     document.getElementById("pontuacao_atual").textContent = questao6 
     document.getElementById("pontuacao_total").textContent = contador
-    questao1 + questao2 + questao3 + questao4 + questao5 + questao6 + questao7 + questao8 + questao9 + questao10 + questao11 + questao12
+    
 }
+//Bloco de função para os botões respostas da questão 6
+
+
+//Bloco de função para os botões respostas da questão 7
+function q7_correta(){
+    document.getElementById("q7_op_1").style.background = "green"
+    document.getElementById("q7_op_1").style.borderColor = "green"
+    document.getElementById("q7_op_1").style.color = "white"
+    
+    contador += 30
+    questao6 = 30
+    console.log("Clicou na certa pontos ---> ", questao7)
+    document.getElementById("pontuacao_atual").textContent = questao7 
+    document.getElementById("pontuacao_total").textContent = contador
+    
+    
+    
+    
+}
+
+function q7_errada(c){
+    document.getElementById(c).style.background = "red"
+    document.getElementById(c).style.borderColor = "red"
+    document.getElementById(c).style.color = "white"
+    questao7 = 0
+    console.log("clicou na errada")
+    document.getElementById("pontuacao_atual").textContent = questao7 
+    document.getElementById("pontuacao_total").textContent = contador
+    
+}
+//Bloco de função para os botões respostas da questão 7
+
+
+//Bloco de função para os botões respostas da questão 8
+function q8_correta(){
+    document.getElementById("q8_op_3").style.background = "green"
+    document.getElementById("q8_op_3").style.borderColor = "green"
+    document.getElementById("q8_op_3").style.color = "white"
+    
+    contador += 20
+    questao8 = 20
+    console.log("Clicou na certa pontos ---> ", questao8)
+    document.getElementById("pontuacao_atual").textContent = questao8 
+    document.getElementById("pontuacao_total").textContent = contador
+    
+    
+    
+    
+}
+
+function q8_errada(d){
+    document.getElementById(d).style.background = "red"
+    document.getElementById(d).style.borderColor = "red"
+    document.getElementById(d).style.color = "white"
+    questao8 = 0
+    console.log("clicou na errada")
+    document.getElementById("pontuacao_atual").textContent = questao8 
+    document.getElementById("pontuacao_total").textContent = contador
+    
+}
+//Bloco de função para os botões respostas da questão 8
+
+
+//Bloco de função para os botões respostas da questão 9
+function q9_correta(){
+    document.getElementById("q9_op_1").style.background = "green"
+    document.getElementById("q9_op_1").style.borderColor = "green"
+    document.getElementById("q9_op_1").style.color = "white"
+    
+    contador += 20
+    questao9 = 20
+    console.log("Clicou na certa pontos ---> ", questao9)
+    document.getElementById("pontuacao_atual").textContent = questao9 
+    document.getElementById("pontuacao_total").textContent = contador
+    
+    
+    
+    
+}
+
+function q9_errada(e){
+    document.getElementById(e).style.background = "red"
+    document.getElementById(e).style.borderColor = "red"
+    document.getElementById(e).style.color = "white"
+    questao9 = 0
+    console.log("clicou na errada")
+    document.getElementById("pontuacao_atual").textContent = questao9 
+    document.getElementById("pontuacao_total").textContent = contador
+    
+}
+//Bloco de função para os botões respostas da questão 8

@@ -1,6 +1,6 @@
 var deck = [
 
-    {   
+    {   //Pergunta 1
         imagem : "../images/Homem_mosca.jpg",
         altura : "270px",
         largura :"90%",
@@ -10,6 +10,7 @@ var deck = [
     },
 
     {
+      //Pergunta 2
         imagem : "../images/Here´s Jonhy.jpg",
         pergunta : "Qual é a frase icônica dita por Jack Torrance nesta Cena ?",
         resposta : ["Abre a porta aqui, na moral", "Aqui está o Jonhy", "Achei você", "Tem açucar aí ?"],
@@ -17,6 +18,7 @@ var deck = [
     },
 
     {
+      //pergunta 3
         imagem : "../images/clube_da_luta.jpg",
         pergunta : "Qual é a primeira regra do clube da luta ? ",
         resposta : ["Não falar sobre o clube da Luta", "Não nocautear os oponentes", "usar proteção bucal", "Não faltar as lutas"],
@@ -25,6 +27,7 @@ var deck = [
     },
 
     {
+      //pergunta 4
         imagem : "../images/Titanic_1.jpg",
         pergunta : "Em que ano foi criado o filme Titanic de James Cameron?",
         resposta : [1997, 2008, 1995, 1980],
@@ -32,6 +35,7 @@ var deck = [
     },
 
     {
+      //pergunta 5
         imagem : "../images/estatueta.jpg",
         pergunta : "Quantos oscars o filme Titanic Ganhou ?",
         resposta : [10,7,11,12],
@@ -39,11 +43,63 @@ var deck = [
     },
 
     {
+      //pergunta 6
         imagem : "../images/Darth_vader.jpg",
         pergunta : "O que Darth Vader fala para Luke Skywalker nesta cena ?",
         resposta : ["Voce nunca vencerá", "Luke, eu sou seu pai", "Venha para o lado Negro da força", "Eu vou te  matar"],
         resultado : 30
-    }
+    },
+
+    {
+      //Pergunta 7
+      imagem : "../images/indiana_jones.jpg",
+      pergunta : "Esta cena pertence a qual filme ? ",
+      resposta : ["Indiana Jones", "Missão Impossível", "Lost", "Perdidos na floresta"],
+      resultado : 30
+    },
+
+    {
+      //Pergunta 8
+      imagem : "../images/donnie_darko.png",
+      pergunta : "Em que ano foi lançado o filme Donnie Darko ?",
+      resposta : [2006,2002,2001,2004],
+      resultado: 20
+    },
+
+    {
+      //Pergunta 9
+      imagem : "../images/mad_max.jpg",
+      pergunta : "Qual é o nome desse personagem de Mad Max ?",
+      resposta : ["Max Rockatansky", "Mudguts", "Johny o garoto", "Toddler"],
+      resultado : 20
+    },
+
+    {
+      //Pergunta10
+      imagem : "../images/boyhood.jpg",
+      pergunta : "Quanto tempo durou a produção do filme 'Boyhood da infância a juventude'",
+      resposta : ["7 meses", "1 ano e 5 meses", "11 meses", "12 anos"],
+      resultado : 10
+    },
+    
+    {
+      //Pergunta11
+      imagem : "../images/avatar.jpg",
+      pergunta : "O filme avatar arrecadou 2.7 bilhôes de dólares :",
+      resposta : ["Verdadeiro", "Falso"],
+      resultado : 10
+    },
+    
+    {
+      //Pergunta12
+      imagem : "../images/star_trek.jpg",
+      pergunta : "Este personagem pertence a qual filme ?",
+      resposta : ["2001: uma odisseia no espaço", "Perdido em Marte", "Star Trek", "Star Wars"],
+      resultado : 10
+    },
+
+
+
 
 
 ]
@@ -279,6 +335,165 @@ function pergunta6(){
 
 <div class="cards_respostas">
 <button  class="botao_respostas" id="q6_op_4" onclick="q6_errada(b = 'q6_op_4')">${deck[5].resposta[3]}</button>
+</div>
+</div>`
+}
+
+function pergunta7(){
+  document.getElementById("container_questionario").innerHTML =
+  ` <div id="container_titulo">
+  
+  <h1>Questionário de Filmes</h1>
+
+</div>
+
+<div id="container_imagem">
+
+  <img src="${deck[6].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
+</div>
+
+<div id="container_pergunta">
+
+<p>${deck[6].pergunta} </p>
+</div>
+
+<div id="container_respostas">
+
+
+<div class="cards_respostas">
+<button class="botao_respostas" id="q7_op_1" onclick="q7_correta()">${deck[6].resposta[0]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q7_op_2" onclick="q7_errada(c = 'q7_op_2')">${deck[6].resposta[1]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q7_op_3" onclick="q7_errada(c = 'q7_op_3')">${deck[6].resposta[2]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q7_op_4" onclick="q7_errada(c = 'q7_op_4')">${deck[6].resposta[3]}</button>
+</div>
+</div>`
+}
+
+
+function pergunta8(){
+  document.getElementById("container_questionario").innerHTML =
+  ` <div id="container_titulo">
+  
+  <h1>Questionário de Filmes</h1>
+
+</div>
+
+<div id="container_imagem">
+
+  <img src="${deck[7].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
+</div>
+
+<div id="container_pergunta">
+
+<p>${deck[7].pergunta} </p>
+</div>
+
+<div id="container_respostas">
+
+
+<div class="cards_respostas">
+<button class="botao_respostas" id="q8_op_1" onclick="q8_errada(d = 'q8_op_1')">${deck[7].resposta[0]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q8_op_2" onclick="q8_errada(d = 'q8_op_2')">${deck[7].resposta[1]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q8_op_3" onclick="q8_correta()">${deck[7].resposta[2]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q8_op_4" onclick="q8_errada(d = 'q8_op_4')">${deck[7].resposta[3]}</button>
+</div>
+</div>`
+}
+
+
+function pergunta9(){
+  document.getElementById("container_questionario").innerHTML =
+  ` <div id="container_titulo">
+  
+  <h1>Questionário de Filmes</h1>
+
+</div>
+
+<div id="container_imagem">
+
+  <img src="${deck[8].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
+</div>
+
+<div id="container_pergunta">
+
+<p>${deck[8].pergunta} </p>
+</div>
+
+<div id="container_respostas">
+
+
+<div class="cards_respostas">
+<button class="botao_respostas" id="q9_op_1" onclick="q9_correta()">${deck[8].resposta[0]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q9_op_2" onclick="q9_errada(e = 'q9_op_2')">${deck[8].resposta[1]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q9_op_3" onclick="q9_errada(e = 'q9_op_3')">${deck[8].resposta[2]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q9_op_4" onclick="q9_errada(e = 'q9_op_4')">${deck[8].resposta[3]}</button>
+</div>
+</div>`
+}
+
+
+function pergunta9(){
+  document.getElementById("container_questionario").innerHTML =
+  ` <div id="container_titulo">
+  
+  <h1>Questionário de Filmes</h1>
+
+</div>
+
+<div id="container_imagem">
+
+  <img src="${deck[8].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
+</div>
+
+<div id="container_pergunta">
+
+<p>${deck[8].pergunta} </p>
+</div>
+
+<div id="container_respostas">
+
+
+<div class="cards_respostas">
+<button class="botao_respostas" id="q9_op_1" onclick="q9_correta()">${deck[8].resposta[0]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q9_op_2" onclick="q9_errada(e = 'q9_op_2')">${deck[8].resposta[1]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q9_op_3" onclick="q9_errada(e = 'q9_op_3')">${deck[8].resposta[2]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q9_op_4" onclick="q9_errada(e = 'q9_op_4')">${deck[8].resposta[3]}</button>
 </div>
 </div>`
 }
