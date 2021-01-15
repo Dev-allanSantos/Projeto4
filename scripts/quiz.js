@@ -459,7 +459,7 @@ function pergunta9(){
 }
 
 
-function pergunta9(){
+function pergunta10(){
   document.getElementById("container_questionario").innerHTML =
   ` <div id="container_titulo">
   
@@ -469,32 +469,103 @@ function pergunta9(){
 
 <div id="container_imagem">
 
-  <img src="${deck[8].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
+  <img src="${deck[9].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
 </div>
 
 <div id="container_pergunta">
 
-<p>${deck[8].pergunta} </p>
+<p>${deck[9].pergunta} </p>
 </div>
 
 <div id="container_respostas">
 
 
 <div class="cards_respostas">
-<button class="botao_respostas" id="q9_op_1" onclick="q9_correta()">${deck[8].resposta[0]}</button>
+<button class="botao_respostas" id="q10_op_1" onclick="q10_errada(f = 'q10_op_1')">${deck[9].resposta[0]}</button>
 </div>
 
 <div class="cards_respostas">
-<button  class="botao_respostas" id="q9_op_2" onclick="q9_errada(e = 'q9_op_2')">${deck[8].resposta[1]}</button>
+<button  class="botao_respostas" id="q10_op_2" onclick="q10_errada(f = 'q10_op_2')">${deck[9].resposta[1]}</button>
 </div>
 
 <div class="cards_respostas">
-<button  class="botao_respostas" id="q9_op_3" onclick="q9_errada(e = 'q9_op_3')">${deck[8].resposta[2]}</button>
+<button  class="botao_respostas" id="q10_op_3" onclick="q10_errada(f = 'q10_op_3')">${deck[9].resposta[2]}</button>
 </div>
 
 <div class="cards_respostas">
-<button  class="botao_respostas" id="q9_op_4" onclick="q9_errada(e = 'q9_op_4')">${deck[8].resposta[3]}</button>
+<button  class="botao_respostas" id="q10_op_4" onclick="q10_correta()">${deck[9].resposta[3]}</button>
 </div>
 </div>`
 }
 
+function pergunta11(){
+  document.getElementById("container_questionario").innerHTML =
+  ` <div id="container_titulo">
+  
+  <h1>Questionário de Filmes</h1>
+
+</div>
+
+<div id="container_imagem">
+
+  <img src="${deck[10].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
+</div>
+
+<div id="container_pergunta">
+
+<p>${deck[10].pergunta} </p>
+</div>
+
+<div id="container_respostas">
+
+
+<div class="cards_respostas">
+<button class="botao_respostas" id="q11_op_1" onclick="q11_correta()">${deck[10].resposta[0]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q11_op_2" onclick="q11_errada(g = 'q11_op_2')">${deck[10].resposta[1]}</button>
+</div>
+
+
+</div>`
+}
+
+function pergunta12(){
+  document.getElementById("container_questionario").innerHTML =
+  ` <div id="container_titulo">
+  
+  <h1>Questionário de Filmes</h1>
+
+</div>
+
+<div id="container_imagem">
+
+  <img src="${deck[11].imagem}" alt="paisagem" width="${deck[0].largura}" height="${deck[0].altura}">
+</div>
+
+<div id="container_pergunta">
+
+<p>${deck[11].pergunta} </p>
+</div>
+
+<div id="container_respostas">
+
+
+<div class="cards_respostas">
+<button class="botao_respostas" id="q12_op_1" onclick="q12_errada(h = 'q12_op_1')">${deck[11].resposta[0]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q12_op_2" onclick="q12_errada(h = 'q12_op_2')">${deck[11].resposta[1]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q12_op_3" onclick="q12_correta()">${deck[11].resposta[2]}</button>
+</div>
+
+<div class="cards_respostas">
+<button  class="botao_respostas" id="q12_op_4" onclick="q12_errada(h = 'q12_op_4')">${deck[11].resposta[3]}</button>
+</div>
+</div>`
+}
