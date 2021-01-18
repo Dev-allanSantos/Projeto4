@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/main.css">
     <script src="./scripts/quiz.js"></script>
     <script src="./scripts/respostas.js"></script>
+    <script src="./scripts/recorde.js"></script>
 </head>
 
 <body>
@@ -26,8 +27,9 @@
                 </div>
 
                 <div id="container_mensagem">
-                    <h2>Bem-vindo ao quiz sobre filmes <br>escolha uma das perguntas abaixo
+                    <h2>Bem-vindo ao quiz sobre filmes ! <br>escolha uma das perguntas abaixo aleatoriamente ou <br>clique no botão para iniciar o jogo
                     </h2>
+                    <button class="botao_pontuacao" onclick="pergunta1()">iniciar</button>
                 </div>
 
               <!--
@@ -77,10 +79,7 @@
                         <span id="pontuacao_atual"><strong></strong></span>
                     </div>
 
-                    <div class="card_pontuacao">
-                        <h4>Record</h4>
-                        <span id="record"><strong></strong></span>
-                    </div>
+                    
 
                     <div class="card_pontuacao"> 
                         <h4>Pontuação total :</h4>
@@ -92,12 +91,14 @@
                 <article id="container_score">
                     <!--Container do High score-->
                     <div id="container_botao_pontuacao">
-                        <button class="botao_pontuacao">High Score</button>
-                        <button class="botao_pontuacao">Salvar</button>
+                        <button class="botao_pontuacao" onclick="novoRecord()">Recorde</button>
+                        <button class="botao_pontuacao">Ranking</button>
+                        <button class="botao_pontuacao">Novo Jogo</button>
+                        <button class="botao_pontuacao" onclick="remove()"></button>
 
                     </div>
 
-                    <div id="container_do_ranking"></div>
+                    <div id="container_do_record"></div>
 
                 </article>
             </article>

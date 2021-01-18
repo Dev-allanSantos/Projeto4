@@ -12,7 +12,7 @@ var deck = [
     {
       //Pergunta 2
         imagem : "../images/Here´s Jonhy.jpg",
-        pergunta : "Qual é a frase icônica dita por Jack Torrance nesta Cena ?",
+        pergunta : "Qual é a frase icônica dita por Jack Torrance nesta cena ?",
         resposta : ["Abre a porta aqui, na moral", "Aqui está o Jonhy", "Achei você", "Tem açucar aí ?"],
         resultado : 70
     },
@@ -77,7 +77,7 @@ var deck = [
     {
       //Pergunta10
       imagem : "../images/boyhood.jpg",
-      pergunta : "Quanto tempo durou a produção do filme 'Boyhood da infância a juventude'",
+      pergunta : "Quanto tempo durou a produção do filme 'Boyhood da infância a juventude' ?",
       resposta : ["7 meses", "1 ano e 5 meses", "11 meses", "12 anos"],
       resultado : 10
     },
@@ -85,7 +85,7 @@ var deck = [
     {
       //Pergunta11
       imagem : "../images/avatar.jpg",
-      pergunta : "O filme avatar arrecadou 2.7 bilhôes de dólares :",
+      pergunta : "O filme avatar arrecadou 2.7 bilhões de dólares :",
       resposta : ["Verdadeiro", "Falso"],
       resultado : 10
     },
@@ -141,6 +141,10 @@ function pergunta1(){
   <div class="cards_respostas">
       <button  class="botao_respostas" id="q1_op_4" onclick="q1_correta()">${deck[0].resposta[3]}</button>
   </div>
+</div>
+
+<div class="container_botao_proximo">
+  <button class="botao_pontuacao" onclick="pergunta2()">Próximo</button>
 </div>`
 }
 
@@ -180,7 +184,12 @@ function pergunta2(){
 <div class="cards_respostas">
   <button  class="botao_respostas" id="q2_op_4" onclick="q2_errada(y = 'q2_op_4')">${deck[1].resposta[3]}</button>
 </div>
-</div>`
+</div>
+
+<div class="container_botao_proximo">
+  <button class="botao_pontuacao" onclick="pergunta3()">Próximo</button>
+</div>
+`
 }
 
 function pergunta3(){
@@ -219,6 +228,10 @@ function pergunta3(){
 <div class="cards_respostas">
   <button  class="botao_respostas" id="q3_op_4" onclick="q3_errada(w = 'q3_op_4')">${deck[2].resposta[3]}</button>
 </div>
+</div>
+
+<div class="container_botao_proximo">
+  <button class="botao_pontuacao" onclick="pergunta4()">Próximo</button>
 </div>`
 }
 
@@ -258,6 +271,10 @@ function pergunta4(){
 <div class="cards_respostas">
   <button  class="botao_respostas" id="q4_op_4" onclick="q4_errada(z = 'q4_op_4')">${deck[3].resposta[3]}</button>
 </div>
+</div>
+
+<div class="container_botao_proximo">
+  <button class="botao_pontuacao" onclick="pergunta5()">Próximo</button>
 </div>`
 }
 
@@ -297,6 +314,10 @@ function pergunta5(){
 <div class="cards_respostas">
   <button  class="botao_respostas" id="q5_op_4" onclick="q5_errada(a = 'q5_op_4')">${deck[4].resposta[3]}</button>
 </div>
+</div>
+
+<div class="container_botao_proximo">
+  <button class="botao_pontuacao" onclick="pergunta6()">Próximo</button>
 </div>`
 }
 
@@ -336,6 +357,10 @@ function pergunta6(){
 <div class="cards_respostas">
 <button  class="botao_respostas" id="q6_op_4" onclick="q6_errada(b = 'q6_op_4')">${deck[5].resposta[3]}</button>
 </div>
+</div>
+
+<div class="container_botao_proximo">
+  <button class="botao_pontuacao" onclick="pergunta7()">Próximo</button>
 </div>`
 }
 
@@ -375,6 +400,10 @@ function pergunta7(){
 <div class="cards_respostas">
 <button  class="botao_respostas" id="q7_op_4" onclick="q7_errada(c = 'q7_op_4')">${deck[6].resposta[3]}</button>
 </div>
+</div>
+
+<div class="container_botao_proximo">
+  <button class="botao_pontuacao" onclick="pergunta8()">Próximo</button>
 </div>`
 }
 
@@ -415,6 +444,10 @@ function pergunta8(){
 <div class="cards_respostas">
 <button  class="botao_respostas" id="q8_op_4" onclick="q8_errada(d = 'q8_op_4')">${deck[7].resposta[3]}</button>
 </div>
+</div>
+
+<div class="container_botao_proximo">
+  <button class="botao_pontuacao" onclick="pergunta9()">Próximo</button>
 </div>`
 }
 
@@ -455,6 +488,10 @@ function pergunta9(){
 <div class="cards_respostas">
 <button  class="botao_respostas" id="q9_op_4" onclick="q9_errada(e = 'q9_op_4')">${deck[8].resposta[3]}</button>
 </div>
+</div>
+
+<div class="container_botao_proximo">
+  <button class="botao_pontuacao" onclick="pergunta10()">Próximo</button>
 </div>`
 }
 
@@ -495,6 +532,10 @@ function pergunta10(){
 <div class="cards_respostas">
 <button  class="botao_respostas" id="q10_op_4" onclick="q10_correta()">${deck[9].resposta[3]}</button>
 </div>
+</div>
+
+<div class="container_botao_proximo">
+  <button class="botao_pontuacao" onclick="pergunta11()">Próximo</button>
 </div>`
 }
 
@@ -527,8 +568,12 @@ function pergunta11(){
 <button  class="botao_respostas" id="q11_op_2" onclick="q11_errada(g = 'q11_op_2')">${deck[10].resposta[1]}</button>
 </div>
 
+</div>
 
+<div class="container_botao_proximo">
+  <button class="botao_pontuacao" onclick="pergunta12()">Próximo</button>
 </div>`
+
 }
 
 function pergunta12(){

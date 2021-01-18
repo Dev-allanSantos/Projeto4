@@ -40,7 +40,7 @@ article#container_questionario{
     
     border:#034694 solid 5px;
     width: 60%;
-    height: 850px;
+    height: 900px;
     min-width: 510px;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,8 @@ div#container_pergunta{
     min-width: 350px;
     border-radius: 20px;
     padding: 8px;
-    
+    text-align: center;
+    font-size: 18px;
     display: flex;
     justify-content: center;
 }
@@ -114,6 +115,10 @@ button.botao_respostas:hover{
     color: white;
 }
 
+div.container_botao_proximo{
+    margin-bottom: 30px;
+}
+
 article#container_pontuacao_score{
     
     width: 39%;
@@ -138,24 +143,27 @@ div.card_pontuacao{
 }
 
 article#container_score{
-    
+    background-color: aqua;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 div#container_botao_pontuacao{
-
-    width: 250px;
+    background-color: blueviolet;
+    width: 400px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 
 button.botao_pontuacao{
     background-color:rgb(61, 115, 233) ;
     color: white;
     height: 40px;
-    width: 90px;
+    width: 100px;
     border-radius: 7px;
+    font-size: 17px;
     margin: 5px;
     border:4px solid rgb(61, 115, 233) ;
 }
