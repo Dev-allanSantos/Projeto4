@@ -50,7 +50,26 @@ function novoRecord() {
 }
 
 
-var ranking = [
+var ranking = JSON.parse(localStorage.getItem("record")) 
+if (ranking == null || ranking == undefined) {
+    ranking = 
+    [
+        
+        
+    
+        {
+            nomeDoJogador: "Atilas",
+            record: 0
+        },
+    
+      
+    
+    ]
+}
+
+[
+    
+    
 
     {
         nomeDoJogador: "Atilas",
@@ -63,6 +82,52 @@ var ranking = [
 
 function remove() {
     localStorage.removeItem("record")
+}
+
+function geraRanking(){
+    document.getElementById("conteudo_principal").innerHTML =
+    `<table>
+    <tbody>
+        <tr>
+            <th>Ranking dos cinco primeiros</th>
+        </tr>
+        <tr>
+            <th>Posição</th>
+            <th>Nome</th>
+            <th>score</th>
+        </tr>
+
+        <tr>
+            <td><strong>primeiro</strong></td>
+            <td>${ranking[0].nomeDoJogador}</td>
+            <td>${ranking[0].record}</td>
+        </tr>
+
+        <tr>
+            <td><strong>segundo</strong></td>
+            <td>${ranking[1].nomeDoJogador}</td>
+            <td>${ranking[1].record}</td>
+        </tr>
+
+        <tr>
+            <td><strong>Terceiro</strong></td>
+            <td>${ranking[2].nomeDoJogador}</td>
+            <td>${ranking[2].record}</td>
+        </tr>
+
+        <tr>
+            <td><strong>Quarto</strong></td>
+            <td>${ranking[3].nomeDoJogador}</td>
+            <td>${ranking[3].record}</td>
+        </tr>
+
+        <tr>
+            <td><strong>Quinto</strong></td>
+            <td>${ranking[4].nomeDoJogador}</td>
+            <td>${ranking[4].record}</td>
+        </tr>
+    </tbody>
+</table>`
 }
 
 function novo_Jogo(){
@@ -101,14 +166,14 @@ function novo_Jogo(){
             <!--Container da pontuação-->
             <div class="card_pontuacao">
                 <h4>Pontuação Atual :</h4>
-                <span id="pontuacao_atual"><strong></strong></span>
+                <span id="pontuacao_atual"><strong>0</strong></span>
             </div>
 
             
 
             <div class="card_pontuacao"> 
                 <h4>Pontuação total :</h4>
-                <span id="pontuacao_total"><strong></strong></span>
+                <span id="pontuacao_total"><strong>0</strong></span>
             </div>
 
         </article>

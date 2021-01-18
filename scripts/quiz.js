@@ -3,7 +3,7 @@ var deck = [
     {   //Pergunta 1
         imagem : "../images/Homem_mosca.jpg",
         altura : "270px",
-        largura :"90%",
+        largura :"75%",
         pergunta:"Esta cena pertence a qual filme ?",
         resposta : ["Vinhas da Ira", "O Relojoeiro", "Lista de Schindler", "O Homem Mosca"],
         resultado : 70 
