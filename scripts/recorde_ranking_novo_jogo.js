@@ -19,7 +19,7 @@ function novoRecord() {
     
 
 
-    if (pontuacaoFinal > ranking[0].record) {
+    if (pontuacaoFinal >= ranking[0].record) {
 
         let novoRecord = {
             timestamp: agora,
@@ -196,13 +196,13 @@ function novo_Jogo(){
             <!--Container do High score-->
             <div id="container_botao_pontuacao">
                 <button class="botao_pontuacao" onclick="novoRecord()">Recorde</button>
-                <button class="botao_pontuacao">Ranking</button>
+                <button class="botao_pontuacao" onclick="geraRanking()">Ranking</button>
                 <button class="botao_pontuacao" onclick="novo_Jogo()">Novo Jogo</button>
-                <button class="botao_pontuacao" onclick="remove()"></button>
+                <button class="botao_pontuacao" onclick="remove()">Remove</button>
 
             </div>
 
-            <div id="container_do_record"></div>
+            <div id="container_do_record_ranking"></div>
 
         </article>
     </article>
