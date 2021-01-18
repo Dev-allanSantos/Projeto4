@@ -6,8 +6,8 @@ function loadRecord() {
 
         let ranking1 = JSON.parse(localStorage.getItem("record"))
 
-        document.getElementById("container_do_record").innerHTML =
-            `<h5>Record --> ${ranking1[0].record} do usuário ${ranking1[0].nomeDoJogador}</h5>`
+        document.getElementById("container_do_record_ranking").innerHTML =
+            `<span id="saida_record">Record : ${ranking1[0].record} do usuário ${ranking1[0].nomeDoJogador}</span>`
 
     }
 }
@@ -16,7 +16,7 @@ function novoRecord() {
     let nome = prompt("Qual o Seu Nome?");
     let pontuacaoFinal = parseInt(document.getElementById("pontuacao_total").textContent)
     let agora = Date.now();
-    let ranking2 = JSON.parse(localStorage.getItem("record"))
+    
 
 
     if (pontuacaoFinal > ranking[0].record) {
@@ -54,80 +54,94 @@ var ranking = JSON.parse(localStorage.getItem("record"))
 if (ranking == null || ranking == undefined) {
     ranking = 
     [
-        
-        
-    
+        {
+            nomeDoJogador: "Usuario1",
+            record: 0
+        },
+       
+        {
+            nomeDoJogador: "Usuario2",
+            record: 0
+        },
+       
+        {
+            nomeDoJogador: "Usuario3",
+            record: 0
+        },
+       
         {
             nomeDoJogador: "Atilas",
             record: 0
         },
+       
+        {
+            nomeDoJogador: "Atilas",
+            record: 0
+        },
+        
+        
+    
     
       
     
     ]
 }
 
-[
-    
-    
 
-    {
-        nomeDoJogador: "Atilas",
-        record: 0
-    },
-
-  
-
-]
 
 function remove() {
     localStorage.removeItem("record")
 }
 
 function geraRanking(){
-    document.getElementById("conteudo_principal").innerHTML =
-    `<table>
-    <tbody>
-        <tr>
-            <th>Ranking dos cinco primeiros</th>
-        </tr>
-        <tr>
-            <th>Posição</th>
-            <th>Nome</th>
-            <th>score</th>
-        </tr>
-
-        <tr>
-            <td><strong>primeiro</strong></td>
-            <td>${ranking[0].nomeDoJogador}</td>
-            <td>${ranking[0].record}</td>
-        </tr>
-
-        <tr>
-            <td><strong>segundo</strong></td>
-            <td>${ranking[1].nomeDoJogador}</td>
-            <td>${ranking[1].record}</td>
-        </tr>
-
-        <tr>
-            <td><strong>Terceiro</strong></td>
-            <td>${ranking[2].nomeDoJogador}</td>
-            <td>${ranking[2].record}</td>
-        </tr>
-
-        <tr>
-            <td><strong>Quarto</strong></td>
-            <td>${ranking[3].nomeDoJogador}</td>
-            <td>${ranking[3].record}</td>
-        </tr>
-
-        <tr>
-            <td><strong>Quinto</strong></td>
-            <td>${ranking[4].nomeDoJogador}</td>
-            <td>${ranking[4].record}</td>
-        </tr>
-    </tbody>
-</table>`
+  // let ranking = JSON.parse(localStorage.getItem("record")) 
+    
+    document.getElementById("container_do_record_ranking").innerHTML =
+    `
+    <table id="container_da_tabela">
+        <tbody>
+            <tr>
+                <th colspan= "3">Ranking dos cinco primeiros</th>
+            </tr>
+            
+            <tr>
+                <th>Posição</th>
+                <th>Nome</th>
+                <th>score</th>
+            </tr>
+            
+            <tr>
+                <td><strong>primeiro</strong></td>
+                <td class="texto_centralizado">${ranking[0].nomeDoJogador}</td>
+                <td  class="texto_centralizado">${ranking[0].record}</td>
+            </tr>
+            
+            <tr>
+                <td><strong>segundo</strong></td>
+                <td  class="texto_centralizado">${ranking[1].nomeDoJogador}</td>
+                <td  class="texto_centralizado">${ranking[1].record}</td>
+            </tr>
+            
+            <tr>
+                <td><strong>Terceiro</strong></td>
+                <td  class="texto_centralizado">${ranking[2].nomeDoJogador}</td>
+                <td  class="texto_centralizado">${ranking[2].record}</td>
+            </tr>
+            
+            <tr>
+                <td><strong>Quarto</strong></td>
+                <td  class="texto_centralizado">${ranking[3].nomeDoJogador}</td>
+                <td  class="texto_centralizado">${ranking[3].record}</td>
+            </tr>
+            
+            <tr>
+                <td><strong>Quinto</strong></td>
+                <td  class="texto_centralizado">${ranking[4].nomeDoJogador}</td>
+                <td  class="texto_centralizado">${ranking[4].record}</td>
+            </tr>
+        </tbody>
+    </table>
+            `
 }
 
 function novo_Jogo(){
