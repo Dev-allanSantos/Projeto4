@@ -11,7 +11,7 @@ var deck = [
 
     {
       //Pergunta 2
-        imagem : "../images/Here´s Jonhy.jpg",
+        imagem : "./images/Here´s Jonhy.jpg",
         pergunta : "Qual é a frase icônica dita por Jack Torrance nesta cena ?",
         resposta : ["Abre a porta aqui, na moral", "Aqui está o Jonhy", "Achei você", "Tem açucar aí ?"],
         resultado : 70
@@ -19,7 +19,7 @@ var deck = [
 
     {
       //pergunta 3
-        imagem : "../images/clube_da_luta.jpg",
+        imagem : "./images/clube_da_luta.jpg",
         pergunta : "Qual é a primeira regra do clube da luta ? ",
         resposta : ["Não falar sobre o clube da Luta", "Não nocautear os oponentes", "usar proteção bucal", "Não faltar as lutas"],
         resultado : 50
@@ -28,7 +28,7 @@ var deck = [
 
     {
       //pergunta 4
-        imagem : "../images/Titanic_1.jpg",
+        imagem : "./images/Titanic_1.jpg",
         pergunta : "Em que ano foi criado o filme Titanic de James Cameron?",
         resposta : [1997, 2008, 1995, 1980],
         resultado : 50  
@@ -36,7 +36,7 @@ var deck = [
 
     {
       //pergunta 5
-        imagem : "../images/estatueta.jpg",
+        imagem : "./images/estatueta.jpg",
         pergunta : "Quantos oscars o filme Titanic Ganhou ?",
         resposta : [10,7,11,12],
         resultado : 30
@@ -44,7 +44,7 @@ var deck = [
 
     {
       //pergunta 6
-        imagem : "../images/Darth_vader.jpg",
+        imagem : "./images/Darth_vader.jpg",
         pergunta : "O que Darth Vader fala para Luke Skywalker nesta cena ?",
         resposta : ["Voce nunca vencerá", "Luke, eu sou seu pai", "Venha para o lado Negro da força", "Eu vou te  matar"],
         resultado : 30
@@ -52,7 +52,7 @@ var deck = [
 
     {
       //Pergunta 7
-      imagem : "../images/indiana_jones.jpg",
+      imagem : "./images/indiana_jones.jpg",
       pergunta : "Esta cena pertence a qual filme ? ",
       resposta : ["Indiana Jones", "Missão Impossível", "Lost", "Perdidos na floresta"],
       resultado : 30
@@ -60,7 +60,7 @@ var deck = [
 
     {
       //Pergunta 8
-      imagem : "../images/donnie_darko.png",
+      imagem : "./images/donnie_darko.png",
       pergunta : "Em que ano foi lançado o filme Donnie Darko ?",
       resposta : [2006,2002,2001,2004],
       resultado: 20
@@ -68,7 +68,7 @@ var deck = [
 
     {
       //Pergunta 9
-      imagem : "../images/mad_max.jpg",
+      imagem : "./images/mad_max.jpg",
       pergunta : "Qual é o nome desse personagem de Mad Max ?",
       resposta : ["Max Rockatansky", "Mudguts", "Johny o garoto", "Toddler"],
       resultado : 20
@@ -76,7 +76,7 @@ var deck = [
 
     {
       //Pergunta10
-      imagem : "../images/boyhood.jpg",
+      imagem : "./images/boyhood.jpg",
       pergunta : "Quanto tempo durou a produção do filme 'Boyhood da infância a juventude' ?",
       resposta : ["7 meses", "1 ano e 5 meses", "11 meses", "12 anos"],
       resultado : 10
@@ -84,7 +84,7 @@ var deck = [
     
     {
       //Pergunta11
-      imagem : "../images/avatar.jpg",
+      imagem : "./images/avatar.jpg",
       pergunta : "O filme avatar arrecadou 2.7 bilhões de dólares :",
       resposta : ["Verdadeiro", "Falso"],
       resultado : 10
@@ -92,7 +92,7 @@ var deck = [
     
     {
       //Pergunta12
-      imagem : "../images/star_trek.jpg",
+      imagem : "./images/star_trek.jpg",
       pergunta : "Este personagem pertence a qual filme ?",
       resposta : ["2001: uma odisseia no espaço", "Perdido em Marte", "Star Trek", "Star Wars"],
       resultado : 10
