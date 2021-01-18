@@ -171,7 +171,7 @@ function q5_errada(a){
     document.getElementById(a).style.background = "red"
     document.getElementById(a).style.borderColor = "red"
     document.getElementById(a).style.color = "white"
-     questao6 = 0
+     questao5 = 0
     console.log("clicou na errada")
     document.getElementById("pontuacao_atual").textContent = questao4 
     document.getElementById("pontuacao_total").textContent = contador
@@ -190,8 +190,8 @@ function q6_correta(){
     
     contador += 30
     questao6 = 30
-    console.log("Clicou na certa pontos ---> ", questao6)
-    document.getElementById("pontuacao_atual").textContent = questao6 
+    console.log("Clicou na certa pontos ---> ", questao7)
+    document.getElementById("pontuacao_atual").textContent = questao7 
     document.getElementById("pontuacao_total").textContent = contador
     
     
@@ -219,7 +219,7 @@ function q7_correta(){
     document.getElementById("q7_op_1").style.color = "white"
     
     contador += 30
-    questao6 = 30
+    questao7 = 30
     console.log("Clicou na certa pontos ---> ", questao7)
     document.getElementById("pontuacao_atual").textContent = questao7 
     document.getElementById("pontuacao_total").textContent = contador

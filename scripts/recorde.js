@@ -1,66 +1,73 @@
-function loadRecord(){
-    
-    
-    if( localStorage.getItem("record") != null &&
-        localStorage.getItem("record") != undefined ){
+function loadRecord() {
 
-       // let ranking1 = JSON.parse(localStorage.getItem("record"))
+
+    if (localStorage.getItem("record") != null &&
+        localStorage.getItem("record") != undefined) {
+
+        let ranking1 = JSON.parse(localStorage.getItem("record"))
 
         document.getElementById("container_do_record").innerHTML =
-        `<h5>Record --> ${ranking[0].record} do usuário ${ranking[0].nomeDoJogador}</h5>`
-        
+            `<h5>Record --> ${ranking1[0].record} do usuário ${ranking1[0].nomeDoJogador}</h5>`
+
     }
 }
 
-function novoRecord(){
+function novoRecord() {
     let nome = prompt("Qual o Seu Nome?");
-    let pontuacaoFinal = prompt("Digite sua pontuação")
+    let pontuacaoFinal = parseInt(document.getElementById("pontuacao_total").textContent)
     let agora = Date.now();
+    let ranking2 = JSON.parse(localStorage.getItem("record"))
 
-    
+
+    if (pontuacaoFinal > ranking[0].record) {
 
         let novoRecord = {
-            timestamp : agora,
+            timestamp: agora,
             nomeDoJogador: nome,
             record: pontuacaoFinal
         }
-        
-        
-        
-        
-        localStorage.setItem("record", stnovoRecord)
-        
+
+
+
+
+        localStorage.setItem("record", JSON.stringify(novoRecord))
+
         // ranking = [
-            //    {   },
-            //    {   },
-            //    {   },
-            //]
-            
-            
-            
-            ranking.unshift(localStorage.getItem("record"))
-            localStorage.setItem("record", ranking)
-            loadRecord()
-            
-    
-            
+        //    {   },
+        //    {   },
+        //    {   },
+        //]
+
+
+
+        ranking.unshift(JSON.parse(localStorage.getItem("record")))
+        localStorage.setItem("record", JSON.stringify(ranking))
+        loadRecord()
+
+    }
+
+
 }
 
 
 var ranking = [
 
     {
-        record : 0
-        
-        
+        nomeDoJogador: "Atilas",
+        record: 0
     },
-    {
-        
-        record : 0
-        
-    },
+
+  
+
 ]
 
-function remove(){
+function remove() {
     localStorage.removeItem("record")
+}
+
+function novo_Jogo(){
+    contador = 0
+    document.getElementById("pontuacao_total").textContent = 0
+    document.getElementById("pontuacao_atual").textContent = 0
+    pergunta1()
 }
