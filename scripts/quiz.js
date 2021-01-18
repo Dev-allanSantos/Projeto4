@@ -1,7 +1,7 @@
 var deck = [
 
     {   //Pergunta 1
-        imagem : "../images/Homem_mosca.jpg",
+        imagem : "./images/Homem_mosca.jpg",
         altura : "250px",
         largura :"85%",
         pergunta:"Esta cena pertence a qual filme ?",
