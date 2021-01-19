@@ -70,12 +70,12 @@ if (ranking == null || ranking == undefined) {
         },
        
         {
-            nomeDoJogador: "Atilas",
+            nomeDoJogador: "Usuario4",
             record: 0
         },
        
         {
-            nomeDoJogador: "Atilas",
+            nomeDoJogador: "Usuario5",
             record: 0
         },
         
@@ -89,9 +89,7 @@ if (ranking == null || ranking == undefined) {
 
 
 
-function remove() {
-    localStorage.removeItem("record")
-}
+
 
 function geraRanking(){
   // let ranking = JSON.parse(localStorage.getItem("record")) 
@@ -198,7 +196,7 @@ function novo_Jogo(){
                 <button class="botao_pontuacao" onclick="novoRecord()">Recorde</button>
                 <button class="botao_pontuacao" onclick="geraRanking()">Ranking</button>
                 <button class="botao_pontuacao" onclick="novo_Jogo()">Novo Jogo</button>
-                <button class="botao_pontuacao" onclick="remove()">Remove</button>
+                
 
             </div>
 
