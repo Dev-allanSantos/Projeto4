@@ -62,7 +62,7 @@ Confira a página estática : <https://allan-gh.github.io/Projeto4/paginaEstatic
 
 para saber sobre o funcionamento do jogo assim como o funcionamento do site  acesse  o manual clicando no endereço abaixo:
 
-<https://allan-gh.github.io/Projeto4/arquivoWord/manual> 
+<https://allan-gh.github.io/Projeto4/arquivoWord/manual.docx> 
 
 <br>
 <br>
