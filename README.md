@@ -75,7 +75,7 @@ Essa etapa se caracteriza pela adição do javascript permitindo que o usuário 
 
 Acesse a página final e tente responder ao quiz :
 
-<https://allan-gh.github.io/Projeto4/index.html>
+https://dev-allansantos.github.io/Projeto4/index.html
 
 
 
