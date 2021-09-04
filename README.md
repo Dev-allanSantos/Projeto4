@@ -50,7 +50,7 @@ Janela parcial do navegador :
 ## 2 - Página Estática (html + css)
 Esta etapa do projeto tinha como objetivo elaborar o documento html e estilizá-lo com css. Dessa forma, os botões presentes na página não funcionarão  devido a ausencia de javascript até esse ponto.
 
-Confira a página estática : <https://dev-allansantos.github.io/Projeto4/paginaEstatica.html>
+Confira a página estática : <a target="_blank">https://dev-allansantos.github.io/Projeto4/paginaEstatica.html<\a>
 
 <br>
 <br>
@@ -75,7 +75,7 @@ Essa etapa se caracteriza pela adição do javascript permitindo que o usuário 
 
 Acesse a página final e tente responder ao quiz :
 
-https://dev-allansantos.github.io/Projeto4/index.html
+<a target="_blank">https://dev-allansantos.github.io/Projeto4/index.html<\a>
 
 
 
