@@ -50,7 +50,7 @@ Janela parcial do navegador :
 ## 2 - Página Estática (html + css)
 Esta etapa do projeto tinha como objetivo elaborar o documento html e estilizá-lo com css. Dessa forma, os botões presentes na página não funcionarão  devido a ausencia de javascript até esse ponto.
 
-Confira a página estática : <https://allan-gh.github.io/Projeto4/paginaEstatica.html>
+Confira a página estática : <https://dev-allansantos.github.io/Projeto4/paginaEstatica.html>
 
 <br>
 <br>
@@ -62,7 +62,7 @@ Confira a página estática : <https://allan-gh.github.io/Projeto4/paginaEstatic
 
 para saber sobre o funcionamento do jogo assim como o funcionamento do site  acesse  o manual clicando no endereço abaixo:
 
-<https://allan-gh.github.io/Projeto4/arquivoWord/manual.docx> 
+<https://dev-allansantos.github.io/Projeto4/arquivoWord/manual.docx> 
 
 <br>
 <br>
